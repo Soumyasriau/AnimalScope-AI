@@ -174,5 +174,4 @@ Errors are JSON `{"detail": "..."}` with status `400` (unreadable/empty image), 
 
 ## Security note
 
-Cell 2 of your Colab notebook contains your **Roboflow API key**. That notebook is intentionally **not** included in this project.
-Do not upload it to a public GitHub repository; regenerate the key in your Roboflow settings if it has been shared anywhere.
+Cell 2 of your Colab notebook contains your **Roboflow API key**. That 
