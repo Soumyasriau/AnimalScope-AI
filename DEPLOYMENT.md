@@ -55,7 +55,7 @@ uvicorn app:app --host 127.0.0.1 --port 8000
 ```
 The model loads in the background. Wait for a log line like `Model loaded and warmed up in ...s`.
 
-**Check:** open http://127.0.0.1:8000/health in your browser. You want `"status":"ready"` and `"classes":["Cat","bird","dog"]`.
+**Check:** open "https://animalscope-ai-backend.onrender.com/health" in your browser. You want `"status":"ready"` and `"classes":["Cat","bird","dog"]`.
 If you see `"status":"loading"`, wait a few seconds and refresh. If you see `"status":"error"`, read the `error` text and the terminal log
 (see Troubleshooting).
 
