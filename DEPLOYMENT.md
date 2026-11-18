@@ -69,7 +69,7 @@ Copy-Item .env.example .env
 npm install
 npm run dev
 ```
-Open http://localhost:5173. The pill above the upload card should say **Model online**. Upload a cat, dog or bird picture and click **Predict Animal**.
+Open "http://localhost:5173/". The pill above the upload card should say **Model online**. Upload a cat, dog or bird picture and click **Predict Animal**.
 
 To stop either server press **Ctrl + C** in its terminal.
 
