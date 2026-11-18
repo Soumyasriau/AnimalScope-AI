@@ -1,0 +1,17 @@
+# Optional Render "Blueprint". You can also create the service by hand (see DEPLOYMENT.md).
+services:
+  - type: web
+    name: animalscope-ai-backend
+    runtime: python
+    rootDir: backend
+    plan: free                      # see DEPLOYMENT.md: TensorFlow may need more memory than the free plan offers
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: TF_CPP_MIN_LOG_LEVEL
+        value: "2"
+      - key: ALLOWED_ORIGINS
+        sync: false                 # you enter this in the Render dashboard (your Vercel URL)

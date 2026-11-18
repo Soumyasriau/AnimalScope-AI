@@ -1,0 +1,10 @@
+# Python 3.11 recommended (TensorFlow does not support very new Python versions).
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+pillow>=10.3
+numpy>=1.26
+# Your model was saved with Keras 3.13.2 (see metadata.json inside animal_classifier.keras),
+# so use Keras >= 3.13.2 together with a TensorFlow release that supports it.
+tensorflow>=2.20
+keras>=3.13.2
